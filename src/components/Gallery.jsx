@@ -64,7 +64,7 @@ class Gallery extends Component {
           <h3 className="text-white">Harry Potter</h3>
           <Row>
             {Saga1.map((e) => (
-              <Col className="col-md-2 col-xs-4 mt-2" key={e.imdbID}>
+              <Col className="col-md-4 col-xs-6 col-lg-2 mt-2" key={e.imdbID}>
                 <Card style={{ width: "14rem" }}>
                   <Card.Img variant="top" src={e.Poster} style={{ height: "20rem" }} />
                 </Card>
@@ -76,7 +76,7 @@ class Gallery extends Component {
           <h3 className="text-white"> Star Trek</h3>
           <Row>
             {Saga2.map((e) => (
-              <Col className="col-md-2 col-xs-4 mt-2" key={e.imdbID}>
+              <Col className="col-md-4 col-xs-6 col-lg-2 mt-2" key={e.imdbID}>
                 <Card style={{ width: "14rem" }}>
                   <Card.Img variant="top" src={e.Poster} style={{ height: "20rem" }} />
                 </Card>
@@ -88,7 +88,7 @@ class Gallery extends Component {
           <h3 className="text-white">Pirates of the Caribbean</h3>
           <Row>
             {Saga3.map((e) => (
-              <Col className="col-md-2 col-xs-4 mt-2" key={e.imdbID}>
+              <Col className="col-md-4 col-xs-6 col-lg-2 mt-2" key={e.imdbID}>
                 <Card style={{ width: "14rem" }}>
                   <Card.Img variant="top" src={e.Poster} style={{ height: "20rem" }} />
                 </Card>

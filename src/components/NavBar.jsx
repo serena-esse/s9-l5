@@ -11,7 +11,7 @@ function NavBar() {
         <Navbar.Brand href="#home">
           <img alt="logo" src="../../assets/logo.png" width="100px"></img>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-secondary" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto text-light">
             <Nav.Link href="#home" className="text-secondary fw-bold">
