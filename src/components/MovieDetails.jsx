@@ -44,7 +44,7 @@ const MovieDetails = () => {
           )}
           {isError && (
             <div className="text-center">
-              <Alert variant="danger">Ah Ah! Ci sei cascato!</Alert>
+              <Alert variant="danger">Non funziona</Alert>
             </div>
           )}
           <Col className="col-10 border border-white rounded-2">

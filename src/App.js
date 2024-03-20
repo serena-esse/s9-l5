@@ -7,6 +7,7 @@ import Gallery from "./components/Gallery";
 import TvShows from "./components/TvShows";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MovieDetails from "./components/MovieDetails";
+import Comments from "./components/Comments";
 
 function App() {
   return (
@@ -16,12 +17,13 @@ function App() {
 
         <Routes>
           <Route path="/tv-shows" element={<TvShows />} />
-          <Route path="/movie-details/:movieId" element={<MovieDetails />} />
+          <Route path="/" element={<Gallery />} />
+          <Route element={<MovieDetails />} path="/movie-details/:movieId" />
         </Routes>
 
-        <MovieDetails />
         <Footer />
       </BrowserRouter>
+      <Comments />
     </div>
   );
 }

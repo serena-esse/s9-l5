@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Card, Spinner, Alert } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 class Gallery extends Component {
   state = {
@@ -66,7 +67,9 @@ class Gallery extends Component {
             {Saga1.map((e) => (
               <Col className="col-md-4 col-xs-6 col-lg-2 mt-2" key={e.imdbID}>
                 <Card style={{ width: "14rem" }}>
-                  <Card.Img variant="top" src={e.Poster} style={{ height: "20rem" }} />
+                  <Link to={"/movie-details/" + e.imdbID}>
+                    <Card.Img variant="top" src={e.Poster} style={{ height: "20rem" }} />
+                  </Link>
                 </Card>
               </Col>
             ))}
@@ -78,7 +81,9 @@ class Gallery extends Component {
             {Saga2.map((e) => (
               <Col className="col-md-4 col-xs-6 col-lg-2 mt-2" key={e.imdbID}>
                 <Card style={{ width: "14rem" }}>
-                  <Card.Img variant="top" src={e.Poster} style={{ height: "20rem" }} />
+                  <Link to={"/movie-details/" + e.imdbID}>
+                    <Card.Img variant="top" src={e.Poster} style={{ height: "20rem" }} />
+                  </Link>
                 </Card>
               </Col>
             ))}
@@ -90,7 +95,9 @@ class Gallery extends Component {
             {Saga3.map((e) => (
               <Col className="col-md-4 col-xs-6 col-lg-2 mt-2" key={e.imdbID}>
                 <Card style={{ width: "14rem" }}>
-                  <Card.Img variant="top" src={e.Poster} style={{ height: "20rem" }} />
+                  <Link to={"/movie-details/" + e.imdbID}>
+                    <Card.Img variant="top" src={e.Poster} style={{ height: "20rem" }} />{" "}
+                  </Link>
                 </Card>
               </Col>
             ))}
