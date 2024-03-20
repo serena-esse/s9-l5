@@ -3,8 +3,11 @@ import Navbar from "react-bootstrap/Navbar";
 import { FaUser, FaSearch } from "react-icons/fa";
 import { PiBellSimpleFill } from "react-icons/pi";
 import { Container } from "react-bootstrap";
+import { Link, useLocation } from "react-router-dom";
 
 function NavBar() {
+  const location = useLocation();
+
   return (
     <Container fluid className="bg-dark">
       <Navbar expand="lg" className="bg-dark ">
@@ -17,8 +20,8 @@ function NavBar() {
             <Nav.Link href="#home" className="text-secondary fw-bold">
               Home
             </Nav.Link>
-            <Nav.Link href="#link" className="text-secondary fw-bold">
-              Tv Show
+            <Nav.Link href="/tv-shows" className="text-secondary fw-bold">
+              <div className={location.pathname === "/tv-shows" ? "nav-link active" : "nav-link"}>Tv Shows</div>
             </Nav.Link>
             <Nav.Link href="#link" className="text-secondary fw-bold">
               Movies
